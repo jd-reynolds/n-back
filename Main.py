@@ -3,6 +3,9 @@ import random
 length = 2                                              # defaults
 range = 3
 
+def clearScreen():
+    print('\n'*100)
+
 def nBack(n, c):
     buffer = []
     streak = True
@@ -12,7 +15,7 @@ def nBack(n, c):
         count += 1
         r = random.randint(1, c)
         buffer = [r] + buffer
-        # clearScreen()
+        clearScreen()
         print(str(buffer[0]) + '\n')
         guess = input()
 
@@ -24,6 +27,7 @@ def nBack(n, c):
             streak = (match == guess)
 
             if not streak:
+                clearScreen()
                 print("Incorrect: the buffer contains [" + buffStr + "]")
 
     print("You recalled " + str(count - n) + " matches correctly.")
@@ -33,7 +37,7 @@ def nBack(n, c):
     if again == 'y':
         nBack(n, c)
 
-
+nBack(length, range)
 
 
 
