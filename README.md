@@ -7,7 +7,7 @@
 ### Installation
 ```git clone https://github.com/jd-reynolds/n_back```
 
-### How to play
+### Usage
 ```python3 n_back/n_back.py```
 * Random numbers in a given range (default: 0-2) are appended to a list one at a time
 * If the number appended occurred n steps back (default: n=3), enter "m" for memory
