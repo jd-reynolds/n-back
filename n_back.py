@@ -15,7 +15,7 @@ class NBack:
     def rot(self):
         newNum = random.randint(0, self.bufferRange)
         self.buffer.append(newNum)
-        print(newNum)
+        print(newNum, "\n")
 
     def test(self):
         guess = input() == "m"
