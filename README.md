@@ -1,5 +1,5 @@
 # N-Back
-*A CLI game and python module to test working memory*
+A CLI game and python module to test working memory. 
 
 ### Requirements
 * python 3
